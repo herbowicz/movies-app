@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
+app.get('/test-api', (req, res) => {
+    res.send('Test http://80.211.3.196:3000/test-api')
+})
+
 app.use('/api', movieRouter)
 
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))
