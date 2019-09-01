@@ -2,6 +2,7 @@
     "name": "client",
     "version": "0.1.0",
     "private": true,
+    "homepage": "http://80.211.3.196/movies-app/client/build",
     "dependencies": {
         "axios": "^0.18.0",
         "bootstrap": "^4.3.1",
