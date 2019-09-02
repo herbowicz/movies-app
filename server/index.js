@@ -5,6 +5,13 @@ const cors = require("cors");
 const db = require("./db");
 const movieRouter = require("./routes/movie-router");
 
+const targetBaseUrl = "movies-app/";
+function handleRedirect(req, res) {
+  const targetUrl = targetBaseUrl + req.originalUrl;
+  res.redirect(targetUrl);
+}
+app.get("*", handleRedirect);
+
 const app = express();
 const apiPort = 3000;
 
